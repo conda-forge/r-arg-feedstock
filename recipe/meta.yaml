@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/arg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/arg/arg_{{ version }}.tar.gz
-  sha256: be0f39ad10c184dee801001fa86382c4b34826a16a58f0d4ce456b73c3af3aed
+  sha256: 6275bc5d0946340d6042bc755975b5aaabb954e58244a8da829a82c1b4fb9f97
 
 build:
   number: 0
@@ -44,8 +44,7 @@ about:
   home: https://ngreifer.github.io/arg/
   dev_url: https://github.com/ngreifer/arg
   license: GPL-2.0-or-later
-  summary: Checks function arguments, ideally for use in R packages. Uses a simple interface
-    and produces clean, informative error messages using 'cli'.
+  summary: Checks function arguments, ideally for use in R packages. Uses a simple interface and produces clean, informative error messages using 'cli'.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
